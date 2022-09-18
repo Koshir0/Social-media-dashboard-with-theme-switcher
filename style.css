@@ -1,0 +1,273 @@
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    background: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    width: 90%;
+    margin: 0 auto;
+    }
+
+.facebook{
+        border-top: 3px solid hsl(208, 92%, 53%);
+        }
+.twitter{
+        border-top: 3px solid hsl(203, 89%, 53%);
+        }
+
+.insta{
+      border-image: linear-gradient(to right ,hsl(37, 97%, 70%), hsl(329, 70%, 58%)) 30;
+      border-top-width: 4px;
+      border-top-style: solid;
+
+}
+.youtube{
+        border-top: 3px solid hsl(348, 97%, 39%);
+        }
+
+
+
+hr{
+  display: none;
+}
+
+
+h1{
+  color: black;
+}
+nav h3, nav p{
+    color: hsl(228, 12%, 44%);
+
+    }
+nav{
+  display: flex;
+  justify-content: space-between;
+  /*background-color: yellow;*/
+}
+
+.darkmode{
+  /*background-color: lime;*/
+  width: 15%;
+}
+
+
+.card{
+              background: hsl(227, 47%, 96%);
+              color: hsl(228, 12%, 44%);
+              border-top-left-radius: 5px;
+              border-top-right-radius: 5px;
+              width: 20%;
+              text-align: center;
+              }
+
+
+           
+.container{
+
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+          }
+
+
+           .container1{
+            width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      flex-wrap: wrap;
+
+          }   
+
+
+.container1 .card:nth-child(1),.container1 .card:nth-child(2),.container1 .card:nth-child(3),
+.container1 .card:nth-child(5),.container1 .card:nth-child(6),.container1 .card:nth-child(7){
+  width: 20%;
+
+  margin-right: 5%;
+  
+
+}
+.container1 .card{
+  margin-bottom: 5%;
+  height: 20%;
+  border-radius: 5px;
+
+}
+
+
+/*.container1 .card1 div:nth-child(1) p:nth-child(1)*/
+.overview-head{
+  padding: 10%;
+  text-align: left;
+}
+
+
+/*.container1 .card1 div:nth-child(2) p:nth-child(1)*/
+.overview-num{
+  color: black;
+  font-weight: 700;
+  font-size: 30px;
+
+}
+
+.card p{
+
+      margin: 0;
+      }
+.card p:nth-child(1) {
+          padding: 20px;
+          }
+.card p:nth-child(4) {
+  padding: 20px;
+  }
+
+.card:hover{
+  opacity: .7;
+  cursor: pointer;
+}
+
+.nums{
+      font-size: 2.5em;
+      font-weight: 600;
+      padding: 0;
+      color: black;
+      }
+.icon{
+    vertical-align: middle;
+
+    }
+
+.card1 div{
+  display: flex;
+  justify-content: space-between;
+
+  /*flex-direction: column;*/
+}
+
+.card1 div p{
+  width: 25%;
+  padding: 10%;
+  vertical-align: middle;
+}
+
+
+/*phone layout*/
+
+@media screen and (max-width: 375px) {
+
+
+.container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+width: 100%;
+
+}
+.container1{
+display: flex;
+justify-content: center;
+flex-direction: column;
+width: 100%;
+
+}
+
+.container1 .card:nth-child(1),.container1 .card:nth-child(2),.container1 .card:nth-child(3),
+.container1 .card:nth-child(5),.container1 .card:nth-child(6),.container1 .card:nth-child(7){
+  width: 100%;
+  margin-right: 0;
+  
+
+}
+
+
+.card{
+width: 100%;
+margin-bottom: 10px;
+
+
+
+
+}
+
+
+hr{
+  display: bla;
+}
+
+.card1 p:nth-child(3) {
+font-weight: bolder;
+font-size: 1rem;
+/*padding: 0;*/
+}
+.card1 p{
+
+margin: 0;
+}
+}
+
+button{
+ /* background-color: lemonchiffon;
+  width: 50px;
+  height: 25px;
+  border: none;
+  border-radius: 25px;
+  position: relative;*/
+  /*background: linear-gradient(to right ,hsl(210, 78%, 56%), hsl(163, 72%, 41%)) ;*/
+  background: hsl(230, 22%, 74%);
+   /*text-decoration: none;*/
+  border: none;
+  /*color: #764abc;*/
+  padding: 10px 20px;
+  border-radius: 25px;
+    transition: all 1s;
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle;
+
+}
+
+button::before{
+ content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  border-radius: 50%;
+  /*background-color:hsl(230, 17%, 14%) ;*/
+  background-color:hsl(0, 0%, 100%) ;
+  transition: all 1s;
+  /*z-index: -1;*/
+  transform: translateX(0);
+
+}
+
+button:hover::before {
+    transform: translateX(100%);
+}
+
+
+
+.dark{
+  background-color: hsl(230, 17%, 14%);
+  
+}
+
+.dark-card{
+  background-color: hsl(228, 28%, 20%);
+color : hsl(228, 34%, 66%);
+}
+
+.dark-num{
+  color: hsl(0, 0%, 100%);
+}
+
+.dark-overview-num, .dark-h1{
+  color: hsl(0, 0%, 100%);
+}
+
+
